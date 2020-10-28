@@ -24,9 +24,8 @@ jobs:
     - name: Make folder docs
       run: |
         rm -rf docs
-        mkdir docs
+        mv dist docs
         echo 'glosa-admin.andros.dev' > docs/CNAME
-        cp dist/* docs
     - name: Upload docs
       run: |
         git config user.email "action@github.com"
