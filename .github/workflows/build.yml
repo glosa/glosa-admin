@@ -12,7 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: |
-        apt install npm
+        sudo apt update
+        sudo apt install npm
         npm install -g @vue/cli
         npm run build
     - name: Make folder docs
