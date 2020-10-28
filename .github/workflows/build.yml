@@ -1,0 +1,30 @@
+name: build
+
+on: 
+  push:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: |
+        apt install npm
+        npm install -g @vue/cli
+        npm run build
+    - name: Make folder docs
+      run: |
+        rm -rf docs
+        mkdir docs
+        echo 'glosa-admin.andros.dev' > docs/CNAME
+        cp dist/* docs
+    - name: Upload docs
+      run: |
+        git config user.email "action@github.com"
+        git config user.name "GitHub Action"
+        git add docs
+        git commit -m 'Update build'
+        git push origin master
