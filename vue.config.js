@@ -6,5 +6,14 @@ module.exports = {
       localeDir: 'locales',
       enableInSFC: false
     }
+  },
+
+  pwa: {
+    name: 'Glosa admin',
+    themeColor: '#ffaaea',
+    msTileColor: '#ffaaea',
+    manifestOptions: {
+      background_color: '#ffaaea'
+    }
   }
 }
