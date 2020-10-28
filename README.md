@@ -1,6 +1,9 @@
 # glosa-admin
 
-## Project setup
+PWA READY glosa-admin.andros.dev
+
+## Development
+
 ```
 npm install
 ```
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
