@@ -5,6 +5,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+      domain: '',
+      token: '',
+      authorization: false
   },
   mutations: {
   },
