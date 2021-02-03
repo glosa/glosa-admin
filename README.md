@@ -25,3 +25,15 @@ npm run build
 ```
 npm run lint
 ```
+
+## Compile SASS
+
+```
+node-sass --output-style compressed src/sass/main.sass public/css/main.css
+```
+
+### Watch: Autocompile if it detects changes
+
+```
+node-sass --watch --source-map true src/sass/main.sass public/css/main.css
+```
