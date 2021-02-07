@@ -37,32 +37,31 @@ const urlAPI = '/api/v1/'
 
 //axios.defaults.baseURL = 'https://api.example.com';
 
-// Important: If axios is used with multiple domains, the AUTH_TOKEN will be sent to all of them.
-// See below for an example using Custom instance defaults instead.
-//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-
-
 export default {
   name: 'LogIn',
   components: {
   },
   data: function () {
       return {
-          url: '',
-          token: ''
+          url: 'http://localhost:4000',
+          token: 'mysecret'
       }
   },
   methods: {
     checkToken: function () {
+        axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`;
         axios
-            .post(`${this.url}${urlAPI}token/check/`, {headers: {'Authorazation': `Bearer ${this.token}`}})
+            .post(`${this.url}${urlAPI}token/check/`)
                 .then(function (response) {
                     // Save id and go to next Page
-                    if(response.status === 200) {
+                    console.log(response)
+                    if(response.data.valid) {
                         //that.$store.commit("setUserLogged", response.data.login_info);
                         //that.$store.commit("changeFirst");
                         //that.$router.push("Flow");
                         console.log('sssssii')
+                    } else {
+                        console.log('noooo')
                     }
                 })
                 .catch(function (error) {
