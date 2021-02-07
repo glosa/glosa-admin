@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Login.vue'
+import LogIn from '../views/LogIn.vue'
 import Comments from '../views/Comments.vue'
 
 Vue.use(VueRouter)
@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Login',
-    component: Home
+    name: 'LogIn',
+    component: LogIn
   },
   {
     path: '/comments',
