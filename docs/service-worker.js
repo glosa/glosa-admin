@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b9a03e8a132185ecc69ee7a63fb1c4c6.js"
+  "/glosa-admin/precache-manifest.ac58b9dda32b3979b7452c040cfc09d6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "glosa-admin"});
