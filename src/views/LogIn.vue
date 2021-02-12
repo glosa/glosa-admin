@@ -59,7 +59,7 @@ export default {
                         //that.$store.commit("setUserLogged", response.data.login_info);
                         //that.$store.commit("changeFirst");
                         //that.$router.push("Flow");
-                        console.log('sssssii')
+                        console.log('sssssii yupi')
                     } else {
                         console.log('noooo')
                     }
