@@ -23,12 +23,13 @@ jobs:
         npm install -g @vue/cli
         npm i
         # SASS
+        npm i node-sass
         node-sass --output-style compressed src/sass/main.sass public/css/main.css
         # Build
         npm run build
     - name: Copy CNAME
       run: |
-        echo 'glosa-admin.andros.dev' > docs/CNAME
+        echo 'https://glosa.github.io/glosa-admin/' > docs/CNAME
     - name: Upload docs
       run: |
         git config user.email "action@github.com"
