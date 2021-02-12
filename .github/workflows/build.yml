@@ -26,6 +26,7 @@ jobs:
         npm i -g node-sass
         node-sass --output-style compressed src/sass/main.sass public/css/main.css
         # Build
+        rm -rf docs
         npm run build
     - name: Upload docs
       run: |
