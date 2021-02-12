@@ -23,7 +23,7 @@ jobs:
         npm install -g @vue/cli
         npm i
         # SASS
-        npm i node-sass
+        npm i sass
         node-sass --output-style compressed src/sass/main.sass public/css/main.css
         # Build
         npm run build
