@@ -21,10 +21,8 @@ jobs:
         npm install -g @vue/cli
         npm i
         npm run build
-    - name: Make folder docs
+    - name: Copy CNAME
       run: |
-        rm -rf docs
-        mv dist docs
         echo 'glosa-admin.andros.dev' > docs/CNAME
     - name: Upload docs
       run: |
