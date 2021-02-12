@@ -17,6 +17,6 @@ module.exports = {
     }
   },
 
-  publicPath: '/',
+  publicPath: '/glosa-admin/',
   outputDir: 'docs'
 }
