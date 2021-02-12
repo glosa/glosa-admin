@@ -27,9 +27,6 @@ jobs:
         node-sass --output-style compressed src/sass/main.sass public/css/main.css
         # Build
         npm run build
-    - name: Add CNAME
-      run: |
-        echo 'https://glosa.github.io/glosa-admin/' >> docs/CNAME
     - name: Upload docs
       run: |
         git config user.email "action@github.com"
