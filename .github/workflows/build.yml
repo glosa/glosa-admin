@@ -13,13 +13,18 @@ jobs:
     - name: Build
       run: |
         sudo apt update
+        # Install
         sudo apt install npm
         mkdir ~/.npm-global
         npm config set prefix '~/.npm-global'
         export PATH=~/.npm-global/bin:$PATH
         NPM_CONFIG_PREFIX=~/.npm-global
+        # Dependencies
         npm install -g @vue/cli
         npm i
+        # SASS
+        node-sass --output-style compressed src/sass/main.sass public/css/main.css
+        # Build
         npm run build
     - name: Copy CNAME
       run: |
