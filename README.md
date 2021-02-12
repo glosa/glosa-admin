@@ -1,6 +1,6 @@
 # Glosa Admin
 
-PWA READY -> glosa-admin.andros.dev
+https://glosa.github.io/glosa-admin/
 
 # Development
 

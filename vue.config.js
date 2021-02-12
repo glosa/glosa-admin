@@ -15,5 +15,8 @@ module.exports = {
     manifestOptions: {
       background_color: '#ffaaea'
     }
-  }
+  },
+
+  publicPath: '/glosa-admin/',
+  outputDir: 'docs'
 }
