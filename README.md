@@ -1,17 +1,20 @@
 # Glosa Admin
 
-https://glosa.github.io/glosa-admin/
+[Go to PWA](https://glosa.github.io/glosa-admin/)
 
-# Development
-
-```
-npm install
-```
-
-## Compiles and hot-reloads for development
+### Install
 
 ```
-npm run serve
+npm i
+npm i -g sass @vue/cli
+```
+
+## Production
+
+### Compile SASS
+
+```
+node-sass src/sass/main.sass:public/css/main.css
 ```
 
 ## Compiles and minifies for production
@@ -20,20 +23,23 @@ npm run serve
 npm run build
 ```
 
-## Lints and fixes files
+## Development
+
+### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+
+### Lints and fixes files
 
 ```
 npm run lint
 ```
 
-## Compile SASS
+### SASS Watch: Autocompile if it detects changes
 
 ```
-node-sass --output-style compressed src/sass/main.sass public/css/main.css
-```
-
-### Watch: Autocompile if it detects changes
-
-```
-node-sass --watch --source-map true src/sass/main.sass public/css/main.css
+node-sass --watch src/sass/main.sass:public/css/main.css
 ```
