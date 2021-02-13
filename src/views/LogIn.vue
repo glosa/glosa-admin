@@ -3,13 +3,13 @@
       <img class="login__logo" alt="Logo" src="img/icons/apple-touch-icon-152x152.png"/>
       <form>
           <div class="form-group">
-              <label class="form-label" for="input-url">URL</label>
+              <label class="form-label" for="input-url">URL Server</label>
               <input
                   v-model="url"
                   class="form-input"
                   type="text"
                   id="input-url"
-                  placeholder="https://mi-glosa.com"
+                  placeholder="https://my-glosa-instance.com"
               >
           </div>
           <div class="form-group">
@@ -22,10 +22,12 @@
                   placeholder="q1w2e23r4t..."
               >
           </div>
-          <button
+          <Button
+              text="LogIn"
               @click.prevent="checkToken"
-              class="btn btn-primary login__btn"
-          >Login</button>
+              class="login__btn"
+              :disabled="url === '' || token === ''"
+          />
       </form>
   </div>
 </template>
@@ -33,14 +35,14 @@
 <script>
 
 import axios from "axios"
-
-const urlAPI = '/api/v1/'
+import Button from "@/components/Button"
 
 //axios.defaults.baseURL = 'https://api.example.com';
 
 export default {
   name: 'LogIn',
   components: {
+      Button
   },
   data: function () {
       return {
@@ -52,7 +54,7 @@ export default {
     checkToken: function () {
         axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`;
         axios
-            .post(`${this.url}${urlAPI}token/check/`)
+            .post(`${this.$store.state.preURLAPI}token/check/`)
                 .then(function (response) {
                     // Save id and go to next Page
                     console.log(response)

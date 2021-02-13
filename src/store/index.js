@@ -5,6 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+      preURLAPI: '/api/v1/',
+      loading: false,
       domain: '',
       token: '',
       authorization: false
