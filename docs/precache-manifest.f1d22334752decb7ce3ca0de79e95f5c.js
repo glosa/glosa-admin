@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01f95f7fb2d040ac5749",
+    "revision": "7f5fa677e69b0bb41556",
     "url": "/glosa-admin/css/app.d623e65d.css"
   },
   {
@@ -8,19 +8,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/glosa-admin/css/main.css"
   },
   {
-    "revision": "530eadce88f39f1305ddcabb331689e1",
+    "revision": "7d2a4c8657a70850550a460057b52b17",
+    "url": "/glosa-admin/favicon.png"
+  },
+  {
+    "revision": "044bb2fc236024db14fc919575915d44",
     "url": "/glosa-admin/index.html"
   },
   {
-    "revision": "01f95f7fb2d040ac5749",
-    "url": "/glosa-admin/js/app.60884a96.js"
+    "revision": "7f5fa677e69b0bb41556",
+    "url": "/glosa-admin/js/app.6679f3b2.js"
   },
   {
     "revision": "d6d9e1ae9f52c737f524",
     "url": "/glosa-admin/js/chunk-vendors.0273cefa.js"
   },
   {
-    "revision": "8e4efa0e2daed70ad44979c13ae29f5a",
+    "revision": "aad94dc4a11e5d81517d6e85c8abcd39",
     "url": "/glosa-admin/manifest.json"
   }
 ]);

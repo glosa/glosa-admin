@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(0.555206,0,0,0.651015,215.637,-8.06953)">
+        <g id="Speech_Bubble_48_">
+            <g id="g4">
+                <path id="path2" d="M74.546,481.398L38.268,481.398L63.92,455.746C77.751,441.914 86.389,423.924 88.711,404.409C29.479,365.538 0,309.227 0,250.193C0,141.281 100.1,30.602 256.868,30.602C422.946,30.602 512,132.448 512,240.651C512,349.567 422.005,451.345 256.868,451.345C227.939,451.345 197.753,447.483 170.803,440.398C145.291,466.565 110.723,481.398 74.546,481.398Z" style="fill:rgb(255,170,234);fill-rule:nonzero;stroke:black;stroke-width:26.4px;"/>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-22.6377,-18.6273)">
+        <g id="G">
+            <text x="32.314px" y="451.641px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:278.119px;">G</text>
+        </g>
+    </g>
+</svg>
