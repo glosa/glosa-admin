@@ -6,6 +6,7 @@
               <label class="form-label" for="input-url">URL Server</label>
               <input
                   v-model="url"
+                  @keypress.enter="validateForm ? getAuthorization: null"
                   class="form-input"
                   type="text"
                   id="input-url"
@@ -16,17 +17,20 @@
               <label class="form-label" for="input-token">Token</label>
               <input
                   v-model="token"
+                  @keypress.enter="validateForm ? getAuthorization: null"
                   class="form-input"
                   type="text"
                   id="input-token"
                   placeholder="q1w2e23r4t..."
               >
           </div>
+          <Loading v-if="$store.state.loading" class="loading-lg" />
           <Button
+              v-else
               text="LogIn"
-              @click.prevent="checkToken"
+              @click.native="getAuthorization"
               class="login__btn"
-              :disabled="url === '' || token === ''"
+              :disabled="validateForm"
           />
       </form>
   </div>
@@ -35,14 +39,15 @@
 <script>
 
 import axios from "axios"
+import Loading from "@/components/Loading"
 import Button from "@/components/Button"
 
-//axios.defaults.baseURL = 'https://api.example.com';
 
 export default {
   name: 'LogIn',
   components: {
-      Button
+      Button,
+      Loading
   },
   data: function () {
       return {
@@ -50,26 +55,57 @@ export default {
           token: ''
       }
   },
+  mounted: function () {
+      this.url = this.$store.state.url
+      this.token = this.$store.state.token
+  },
+  computed: {
+      validateForm: function () {
+          return this.url === '' || this.token === '';
+      }
+  },
   methods: {
-    checkToken: function () {
-        axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`;
-        axios
-            .post(`${this.$store.state.preURLAPI}token/check/`)
-                .then(function (response) {
+      getAuthorization: function () {
+          // Show Loading
+          this.$store.commit('loadingEnable')
+          // config Axios
+          axios.defaults.baseURL = this.url
+          axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`
+          axios
+            .post(`${this.url}${this.$store.state.preURLAPI}token/check/`)
+                .then((response) => {
                     // Save id and go to next Page
-                    console.log(response)
-                    if(response.data.valid) {
-                        //that.$store.commit("setUserLogged", response.data.login_info);
-                        //that.$store.commit("changeFirst");
-                        //that.$router.push("Flow");
-                        console.log('sssssii yupi')
+                    if (response.data.valid) {
+                        // Save
+                        this.$store.commit('logIn', {
+                            url: this.url,
+                            token: this.token
+                        })
+                        // Info user
+                        this.$store.dispatch('toastAdd', {
+                            message: 'Welcome!',
+                            status: 'success'
+                        })
+                        console.log('LogIn')
                     } else {
-                        console.log('noooo')
+                        this.$store.dispatch('toastAdd', {
+                            message: 'Bad server or token',
+                            status: 'error'
+                        })
+                        console.log('Bad server or token')
                     }
                 })
-                .catch(function (error) {
+                .catch((error) => {
+                    this.$store.dispatch('toastAdd', {
+                        message: 'Cannot connect. Please check the information.',
+                        status: 'error'
+                    })
                     console.log(error)
                 })
+                .then(() => {
+                    // Disable Loading
+                    this.$store.commit('loadingDisable')
+                });
     }
   }
 }
