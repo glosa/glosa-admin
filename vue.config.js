@@ -9,7 +9,7 @@ module.exports = {
   },
 
   pwa: {
-    name: 'Glosa admin',
+    name: 'GlosaAdmin',
     themeColor: '#ffaaea',
     msTileColor: '#ffaaea',
     manifestOptions: {
