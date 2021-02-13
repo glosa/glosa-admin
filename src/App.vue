@@ -1,6 +1,5 @@
 <template>
   <div class="app container">
-      <h1 class="app__title">Glosa Admin</h1>
       <div v-if="$store.state.authorization" id="nav">
       <router-link to="/">All</router-link> |
       <router-link to="/logout">Logout</router-link>

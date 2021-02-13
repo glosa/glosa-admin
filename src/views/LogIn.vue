@@ -1,5 +1,6 @@
 <template>
   <div class="login">
+      <img class="login__logo" alt="Logo" src="/img/icons/apple-touch-icon-152x152.png"/>
       <form>
           <div class="form-group">
               <label class="form-label" for="input-url">URL</label>
@@ -43,8 +44,8 @@ export default {
   },
   data: function () {
       return {
-          url: 'http://localhost:4000',
-          token: 'mysecret'
+          url: '',
+          token: ''
       }
   },
   methods: {
