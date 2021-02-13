@@ -1,23 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f5fa677e69b0bb41556",
+    "revision": "07de948298ea7300143a",
     "url": "/glosa-admin/css/app.d623e65d.css"
   },
   {
-    "revision": "8d51e5a9572b76eb94d5f0c100142128",
+    "revision": "03c58a5b64d2353214a33a96ab92ebf8",
     "url": "/glosa-admin/css/main.css"
   },
   {
-    "revision": "7d2a4c8657a70850550a460057b52b17",
-    "url": "/glosa-admin/favicon.png"
-  },
-  {
-    "revision": "044bb2fc236024db14fc919575915d44",
+    "revision": "8bc6b565ea22d613853df0f4077080c1",
     "url": "/glosa-admin/index.html"
   },
   {
-    "revision": "7f5fa677e69b0bb41556",
-    "url": "/glosa-admin/js/app.6679f3b2.js"
+    "revision": "07de948298ea7300143a",
+    "url": "/glosa-admin/js/app.5a10c23e.js"
   },
   {
     "revision": "d6d9e1ae9f52c737f524",
