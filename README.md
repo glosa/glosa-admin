@@ -22,13 +22,13 @@ npm i -g sass @vue/cli
 
 ## Production
 
-### Compile SASS
+Compile SASS
 
 ```
 node-sass src/sass/main.sass:public/css/main.css
 ```
 
-## Compiles and minifies for production
+After compiles and minifies for production
 
 ```
 npm run build
