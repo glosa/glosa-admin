@@ -1,6 +1,17 @@
-# Glosa Admin
+<p align="center">
+  <img src="media/logo.png" alt="logo" width="200"> 
+</p>
+<h1 align="center">Glosa Admin: PWA</h1>
+<p align="center">
+  <a href="https://glosa.github.io/glosa-admin/">👉 USE NOW 👈</a>
+</p>
+<p align="center">
+   <strong >Manage your Glosa site comfortably from wherever you want.</strong>
+</p>
 
-[Go to PWA](https://glosa.github.io/glosa-admin/)
+<p align="center">
+  <img src="media/logo.png" alt="logo" width="50%"> 
+</p>
 
 ### Install
 
