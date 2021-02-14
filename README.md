@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="media/logo.png" alt="logo" width="50%"> 
+  <img src="media/login.png" alt="logo" width="50%"> 
 </p>
 
 ### Install
