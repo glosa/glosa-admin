@@ -1,5 +1,6 @@
 <template>
   <div class="app container">
+      <!-- Toast -->
       <div class="toasts">
         <Toast
             v-for="(toast, index) in $store.state.toasts"
@@ -8,10 +9,18 @@
             :message="toast.message"
         />
       </div>
-      <div v-if="$store.state.authorization" id="nav">
-      <router-link :to="{ name: 'Comments' }">All</router-link> |
-      <a href="#" @click="logOut">LogOut</a>
-    </div>
+      <!-- Nav -->
+      <header v-if="$store.state.authorization" class="navbar">
+          <section class="navbar-section">
+              <router-link class="navbar-brand mr-2" :to="{ name: 'Comments' }">
+                  <img class="brand" alt="Brand" src="img/icons/apple-touch-icon-152x152.png">
+              </router-link>
+          </section>
+          <section class="navbar-section text-center navbar__title">{{ this.$route.name }}</section>
+          <section class="navbar-section">
+              <a href="#"  class="btn btn-link" @click="logOut">LogOut</a>
+          </section>
+      </header>
     <router-view/>
   </div>
 </template>

@@ -37,11 +37,9 @@
 </template>
 
 <script>
-
 import axios from "axios"
 import Loading from "@/components/Loading"
 import Button from "@/components/Button"
-
 
 export default {
   name: 'LogIn',
