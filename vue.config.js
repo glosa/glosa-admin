@@ -16,8 +16,6 @@ module.exports = {
       background_color: '#ffaaea'
     }
   },
-
-  publicPath: '/',
-    //publicPath: '/glosa-admin/',
+  publicPath: '/glosa-admin/',
   outputDir: 'docs'
 }
