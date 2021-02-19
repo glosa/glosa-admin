@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 630 594" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-93.3249,-72.2264)">
+        <g transform="matrix(0.937978,0,0,1,36.9717,3.11435)">
+            <path d="M722.427,221.787C722.427,142.214 653.553,77.612 568.719,77.612L222.849,77.612C138.016,77.612 69.141,142.214 69.141,221.787L69.141,510.136C69.141,589.708 138.016,654.31 222.849,654.31L568.719,654.31C653.553,654.31 722.427,589.708 722.427,510.136L722.427,221.787Z" style="fill:rgb(235,235,235);stroke:black;stroke-width:17.54px;"/>
+        </g>
+        <g>
+            <g transform="matrix(0.555206,0,0,0.651015,359.637,135.93)">
+                <g id="Speech_Bubble_48_">
+                    <g id="g4">
+                        <path id="path2" d="M74.546,481.398L38.268,481.398L63.92,455.746C77.751,441.914 86.389,423.924 88.711,404.409C29.479,365.538 0,309.227 0,250.193C0,141.281 100.1,30.602 256.868,30.602C422.946,30.602 512,132.448 512,240.651C512,349.567 422.005,451.345 256.868,451.345C227.939,451.345 197.753,447.483 170.803,440.398C145.291,466.565 110.723,481.398 74.546,481.398Z" style="fill:rgb(255,170,234);fill-rule:nonzero;stroke:black;stroke-width:26.4px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,153.676,577.014)">
+                <g id="G">
+                    <text x="0px" y="0px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:278.119px;">G</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
