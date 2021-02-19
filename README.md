@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/logo.png" alt="logo" width="200"> 
+  <img src="media/logo-admin.png" alt="logo" width="200"> 
 </p>
 <h1 align="center">Glosa Admin: PWA</h1>
 <p align="center">
