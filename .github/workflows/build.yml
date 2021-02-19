@@ -14,7 +14,7 @@ jobs:
       run: |
         sudo apt update
         # Install
-        sudo apt install npm
+        sudo apt install npm install nodejs-dev node-gyp libssl1.0-dev
         mkdir ~/.npm-global
         npm config set prefix '~/.npm-global'
         export PATH=~/.npm-global/bin:$PATH
