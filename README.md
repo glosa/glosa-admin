@@ -13,6 +13,15 @@
   <img src="media/login.png" alt="logo" width="50%"> 
 </p>
 
+<p align="center">
+  <img src="media/mobile.jpg" alt="logo" width="50%"> 
+</p>
+
+<p align="center">
+  <img src="media/tablet.jpg" alt="logo" width="50%"> 
+</p>
+
+
 ### Install
 
 ```
