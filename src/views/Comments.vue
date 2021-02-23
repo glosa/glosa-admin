@@ -8,7 +8,7 @@
         <div class="btn-group btn-group-block comment__controls">
             <span v-if="commentUpdate === comment.id">
                 <!-- Confirm Update -->
-                <button class="btn btn-lg btn-primary" @click="UpdateComment(comment.id)">Save</button>
+                <button class="btn btn-lg btn-primary" @click="updateComment(comment.id)">Save</button>
                 <button class="btn btn-lg" @click="commentUpdate = false">Cancel</button>
             </span>
             <span v-else-if="commentDelete === comment.id">
@@ -95,6 +95,45 @@ export default {
             };
             const observerVisible = new IntersectionObserver(onIntersectionVisible);
             observerVisible.observe(this.$refs.loading);
+        },
+        updateComment: function (id) {
+            this.$store.commit('loadingEnable')
+            axios
+                .put(`${this.$store.state.url}${this.$store.state.preURLAPI}comments/`, {
+                    id: id,
+                    author: this.comments.filter(comment => comment.id === id)[0].author || '',
+                    email: this.comments.filter(comment => comment.id === id)[0].email || '',
+                    message: this.textUpdate 
+                })
+                .then(() => {
+                    this.$store.dispatch('toastAdd', {
+                        message: 'Update!',
+                        status: 'success'
+                    })
+                })
+                .catch((error) => {
+                    this.$store.dispatch('toastAdd', {
+                        message: 'Could not be update!',
+                        status: 'error'
+                    })
+                    console.log(error)
+                })
+                .then(() => {
+                    // Disable Loading
+                    this.$store.commit('loadingDisable')
+                    // Update local data
+                    this.comments = this.comments.map(comment => {
+                        if (comment.id === id) {
+                            const newComment = comment;
+                            newComment.message = this.textUpdate;
+                            return newComment;
+                        } else {
+                            return comment;
+                        }
+                    });
+                    // Disable Editor Update
+                    this.commentUpdate = false;
+                });
         },
         deleteComment: function (id) {
             this.$store.commit('loadingEnable')
