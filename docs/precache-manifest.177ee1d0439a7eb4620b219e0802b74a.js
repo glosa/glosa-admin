@@ -4,16 +4,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/glosa-admin/css/main.css"
   },
   {
-    "revision": "9117bda180ceea718352d524f5aa9ba4",
+    "revision": "79bc3964024e0ea415a29ad3dddf6884",
     "url": "/glosa-admin/index.html"
   },
   {
-    "revision": "826aee9a91a05823ccaf",
-    "url": "/glosa-admin/js/app.7333bb41.js"
+    "revision": "1e033c3707c10f8228e2",
+    "url": "/glosa-admin/js/app.24bed7c2.js"
   },
   {
-    "revision": "f5362ffd22a217b1e478",
-    "url": "/glosa-admin/js/chunk-vendors.08696737.js"
+    "revision": "caab2bddabb7e0cf1d7b",
+    "url": "/glosa-admin/js/chunk-vendors.615a8e61.js"
   },
   {
     "revision": "aad94dc4a11e5d81517d6e85c8abcd39",
