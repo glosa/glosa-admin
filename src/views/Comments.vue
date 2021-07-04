@@ -2,7 +2,7 @@
   <div class="comments">
     <article v-for="comment in comments" :key="comment.id" class="comment">
         <h2 class="comment__title">{{ filterTitleWithoutURL(comment.thread) }}</h2>
-        <p class="comment__author">{{ comment.author }} - {{ comment.email }}</p>
+        <p class="comment__author">{{ comment.author }}<span v-if="comment.email"> - {{ comment.email }}</span></p>
         <p v-if="commentUpdate !== comment.id" class="comment__text">{{ comment.message }}</p>
         <textarea v-if="commentUpdate === comment.id" v-model="textUpdate" class="comment__update"></textarea>
         <div class="btn-group btn-group-block comment__controls">
