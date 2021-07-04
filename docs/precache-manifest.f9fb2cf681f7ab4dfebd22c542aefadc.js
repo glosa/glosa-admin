@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/glosa-admin/css/main.css"
   },
   {
-    "revision": "9ecf98aa4bee40f1e883427142dbb860",
+    "revision": "9e28a7260f4e1b52e28acc83ce7f6d62",
     "url": "/glosa-admin/index.html"
   },
   {
-    "revision": "5206ca54b7652fa4c49f",
-    "url": "/glosa-admin/js/app.090c65e0.js"
+    "revision": "e3b7fcd2fdcbdd5cfa88",
+    "url": "/glosa-admin/js/app.21ca1356.js"
   },
   {
     "revision": "73dc14f289707adb475b",
